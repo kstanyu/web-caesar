@@ -48,6 +48,9 @@ def index():
     
     return form.format(ciphertext = "")
 
+
+#recieves, process plaintext and renders ciphertext
+  
 @app.route("/", methods = ["POST"])
 def encrypt():
     rot_key = int(request.form["rot"])
